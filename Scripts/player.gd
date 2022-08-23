@@ -3,7 +3,7 @@ extends KinematicBody
 export var _mouse_sensitivity: float = 0.1;
 
 func _ready() -> void:
-	pass;
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
 	
 func _input(event: InputEvent) -> void:
 	var mouse_motion = event as InputEventMouseMotion;
