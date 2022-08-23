@@ -7,4 +7,4 @@ func _input(event: InputEvent) -> void:
 	var mouse_motion = event as InputEventMouseMotion;
 	
 	if(mouse_motion):
-		print("Mouse motion");
+		print(mouse_motion.relative.x);
