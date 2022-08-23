@@ -16,3 +16,7 @@ shape = SubResource( 3 )
 
 [node name="MeshInstance" type="MeshInstance" parent="CollisionShape"]
 mesh = SubResource( 4 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1.42857, 0, 0, 0, 1.42857, 0, 0, 0, 1.42857, 0, 1.0546, -0.895203 )
+current = true
