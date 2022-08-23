@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bag.obj-12ffb2526bd9bcf5422125af20246e6f.mesh"
+
+[deps]
+
+files=[ "res://.import/bag.obj-12ffb2526bd9bcf5422125af20246e6f.mesh" ]
+
+source_file="res://food-kit-1.3/Models/OBJ format/bag.obj"
+dest_files=[ "res://.import/bag.obj-12ffb2526bd9bcf5422125af20246e6f.mesh", "res://.import/bag.obj-12ffb2526bd9bcf5422125af20246e6f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

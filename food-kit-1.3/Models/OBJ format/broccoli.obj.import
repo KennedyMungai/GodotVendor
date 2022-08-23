@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/broccoli.obj-a18350e82be038cdf28d1dce02ffc75e.mesh"
+
+[deps]
+
+files=[ "res://.import/broccoli.obj-a18350e82be038cdf28d1dce02ffc75e.mesh" ]
+
+source_file="res://food-kit-1.3/Models/OBJ format/broccoli.obj"
+dest_files=[ "res://.import/broccoli.obj-a18350e82be038cdf28d1dce02ffc75e.mesh", "res://.import/broccoli.obj-a18350e82be038cdf28d1dce02ffc75e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

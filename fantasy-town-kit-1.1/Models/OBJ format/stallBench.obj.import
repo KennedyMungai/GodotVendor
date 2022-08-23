@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stallBench.obj-02a66cf0282c7706bc816192e248a00f.mesh"
+
+[deps]
+
+files=[ "res://.import/stallBench.obj-02a66cf0282c7706bc816192e248a00f.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/stallBench.obj"
+dest_files=[ "res://.import/stallBench.obj-02a66cf0282c7706bc816192e248a00f.mesh", "res://.import/stallBench.obj-02a66cf0282c7706bc816192e248a00f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

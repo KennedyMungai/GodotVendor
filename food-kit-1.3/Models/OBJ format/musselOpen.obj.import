@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/musselOpen.obj-7fc508e333f7df1707ab7bf295e44dfd.mesh"
+
+[deps]
+
+files=[ "res://.import/musselOpen.obj-7fc508e333f7df1707ab7bf295e44dfd.mesh" ]
+
+source_file="res://food-kit-1.3/Models/OBJ format/musselOpen.obj"
+dest_files=[ "res://.import/musselOpen.obj-7fc508e333f7df1707ab7bf295e44dfd.mesh", "res://.import/musselOpen.obj-7fc508e333f7df1707ab7bf295e44dfd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

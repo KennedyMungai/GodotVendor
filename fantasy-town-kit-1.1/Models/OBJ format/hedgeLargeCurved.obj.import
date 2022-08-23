@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hedgeLargeCurved.obj-4bb45f9a16b64a52c2a2993fb12ad19f.mesh"
+
+[deps]
+
+files=[ "res://.import/hedgeLargeCurved.obj-4bb45f9a16b64a52c2a2993fb12ad19f.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/hedgeLargeCurved.obj"
+dest_files=[ "res://.import/hedgeLargeCurved.obj-4bb45f9a16b64a52c2a2993fb12ad19f.mesh", "res://.import/hedgeLargeCurved.obj-4bb45f9a16b64a52c2a2993fb12ad19f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/roadCurbEnd.obj-0f0c50a83f98a29622e9f05bd990a9a5.mesh"
+
+[deps]
+
+files=[ "res://.import/roadCurbEnd.obj-0f0c50a83f98a29622e9f05bd990a9a5.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/roadCurbEnd.obj"
+dest_files=[ "res://.import/roadCurbEnd.obj-0f0c50a83f98a29622e9f05bd990a9a5.mesh", "res://.import/roadCurbEnd.obj-0f0c50a83f98a29622e9f05bd990a9a5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

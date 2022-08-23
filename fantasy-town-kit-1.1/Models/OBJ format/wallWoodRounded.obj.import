@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWoodRounded.obj-1e22cd8b5dee22f9ea0a80ee59fd070a.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWoodRounded.obj-1e22cd8b5dee22f9ea0a80ee59fd070a.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/wallWoodRounded.obj"
+dest_files=[ "res://.import/wallWoodRounded.obj-1e22cd8b5dee22f9ea0a80ee59fd070a.mesh", "res://.import/wallWoodRounded.obj-1e22cd8b5dee22f9ea0a80ee59fd070a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

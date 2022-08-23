@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWoodCorner.obj-5077cca338798fa7056538a4d64d2f7e.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWoodCorner.obj-5077cca338798fa7056538a4d64d2f7e.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/wallWoodCorner.obj"
+dest_files=[ "res://.import/wallWoodCorner.obj-5077cca338798fa7056538a4d64d2f7e.mesh", "res://.import/wallWoodCorner.obj-5077cca338798fa7056538a4d64d2f7e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

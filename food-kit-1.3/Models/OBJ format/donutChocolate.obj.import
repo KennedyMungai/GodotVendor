@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/donutChocolate.obj-23996ccf620c348e1c9e4001e891b688.mesh"
+
+[deps]
+
+files=[ "res://.import/donutChocolate.obj-23996ccf620c348e1c9e4001e891b688.mesh" ]
+
+source_file="res://food-kit-1.3/Models/OBJ format/donutChocolate.obj"
+dest_files=[ "res://.import/donutChocolate.obj-23996ccf620c348e1c9e4001e891b688.mesh", "res://.import/donutChocolate.obj-23996ccf620c348e1c9e4001e891b688.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallWoodArchTopDetail.obj-af7dc0829bd6b449b6dda35f93d685fd.mesh"
+
+[deps]
+
+files=[ "res://.import/wallWoodArchTopDetail.obj-af7dc0829bd6b449b6dda35f93d685fd.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/wallWoodArchTopDetail.obj"
+dest_files=[ "res://.import/wallWoodArchTopDetail.obj-af7dc0829bd6b449b6dda35f93d685fd.mesh", "res://.import/wallWoodArchTopDetail.obj-af7dc0829bd6b449b6dda35f93d685fd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

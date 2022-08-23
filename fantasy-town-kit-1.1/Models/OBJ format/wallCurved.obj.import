@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/wallCurved.obj-985d4af0b7f98bca4df6a2ab88c83b22.mesh"
+
+[deps]
+
+files=[ "res://.import/wallCurved.obj-985d4af0b7f98bca4df6a2ab88c83b22.mesh" ]
+
+source_file="res://fantasy-town-kit-1.1/Models/OBJ format/wallCurved.obj"
+dest_files=[ "res://.import/wallCurved.obj-985d4af0b7f98bca4df6a2ab88c83b22.mesh", "res://.import/wallCurved.obj-985d4af0b7f98bca4df6a2ab88c83b22.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
