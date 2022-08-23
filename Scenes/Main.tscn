@@ -2,7 +2,7 @@
 
 [sub_resource type="PlaneMesh" id=1]
 
-[node name="Main" type="Spatial"]
+[node name="main" type="Spatial"]
 
 [node name="Ground" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
