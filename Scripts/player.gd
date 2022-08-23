@@ -1,6 +1,6 @@
 extends KinematicBody
 
-export var _mouse_sensitivity: float = 0.05;
+export var _mouse_sensitivity: float = 0.1;
 
 func _ready() -> void:
 	pass;
