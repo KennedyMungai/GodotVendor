@@ -9,6 +9,24 @@ func _ready() -> void:
 	
 
 func _physics_process(delta: float) -> void:
+	movement()
+
+
+func _input(event: InputEvent) -> void:
+	aim(event)
+	
+
+# This is code that implements the player's mouse induced rotation
+func aim(event: InputEvent) -> void:
+	var mouse_motion = event as InputEventMouseMotion
+	if(mouse_motion):
+		rotation_degrees.y -= mouse_motion.relative.x * _mouse_sensitivity
+		var current_tilt:float=$Camera.rotation_degrees.x
+		current_tilt-= mouse_motion.relative.y * _mouse_sensitivity
+		$Camera.rotation_degrees.x = clamp(current_tilt, -90, 90)
+
+# This is code that implements the player movement
+func movement() -> void:
 	var movement_vector: Vector3
 	var forward_movement: Vector3
 	var sideways_movement: Vector3
@@ -26,16 +44,3 @@ func _physics_process(delta: float) -> void:
 	movement_vector = (forward_movement + sideways_movement) * speed
 	movement_vector = movement_vector.normalized()
 	move_and_slide(movement_vector)
-
-
-func _input(event: InputEvent) -> void:
-	aim(event)
-	
-
-func aim(event: InputEvent) -> void:
-	var mouse_motion = event as InputEventMouseMotion
-	if(mouse_motion):
-		rotation_degrees.y -= mouse_motion.relative.x * _mouse_sensitivity
-		var current_tilt:float=$Camera.rotation_degrees.x
-		current_tilt-= mouse_motion.relative.y * _mouse_sensitivity
-		$Camera.rotation_degrees.x = clamp(current_tilt, -90, 90)
