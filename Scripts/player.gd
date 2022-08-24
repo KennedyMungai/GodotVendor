@@ -11,10 +11,9 @@ func _physics_process(delta: float) -> void:
 	var forward_movement: Vector3
 	
 	if(Input.is_action_pressed("move_forward")):
-		print("Moving forward")
 		forward_movement = -transform.basis.z
 	elif(Input.is_action_pressed("move_back")):
-		print("Moving back")
+		forward_movement = transform.basis.z
 	elif(Input.is_action_pressed("move_left")):
 		print("Moving left")
 	elif(Input.is_action_pressed("move_right")):
