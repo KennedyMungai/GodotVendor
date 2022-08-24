@@ -39,4 +39,4 @@ margin_bottom = 32.0
 texture = ExtResource( 2 )
 
 [node name="stallRed" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -2.29425, 0, 0 )
+transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, -2.55553, 0, 0 )
