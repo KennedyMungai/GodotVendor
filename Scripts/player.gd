@@ -7,14 +7,19 @@ func _ready() -> void:
 	
 
 func _physics_process(delta: float) -> void:
+	var movement_vector: Vector3
+	
 	if(Input.is_action_pressed("move_forward")):
 		print("Moving forward")
+		movement_vector = Vector3(0,0,-1)
 	elif(Input.is_action_pressed("move_back")):
 		print("Moving back")
 	elif(Input.is_action_pressed("move_left")):
 		print("Moving left")
 	elif(Input.is_action_pressed("move_right")):
 		print("Moving right")
+		
+	move_and_slide(movement_vector)
 
 
 func _input(event: InputEvent) -> void:
