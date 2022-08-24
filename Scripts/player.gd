@@ -1,8 +1,8 @@
 extends KinematicBody
 
-export var _mouse_sensitivity: float = 0.05
+export var _mouse_sensitivity: float = 0.05 
+export var speed: float = 5.0
 
-var speed: float = 5.0
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
