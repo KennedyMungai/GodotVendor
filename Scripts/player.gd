@@ -8,7 +8,15 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	aim(event)
-
+	
+	if(Input.is_action_pressed("move_forward")):
+		print("Moving forward")
+	elif(Input.is_action_pressed("move_back")):
+		print("Moving back")
+	elif(Input.is_action_pressed("move_left")):
+		print("Moving left")
+	elif(Input.is_action_pressed("move_right")):
+		print("Moving right")
 
 func aim(event: InputEvent) -> void:
 	var mouse_motion = event as InputEventMouseMotion
