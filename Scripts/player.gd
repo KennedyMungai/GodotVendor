@@ -6,9 +6,7 @@ func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 
-func _input(event: InputEvent) -> void:
-	aim(event)
-	
+func _physics_process(delta: float) -> void:
 	if(Input.is_action_pressed("move_forward")):
 		print("Moving forward")
 	elif(Input.is_action_pressed("move_back")):
@@ -17,6 +15,11 @@ func _input(event: InputEvent) -> void:
 		print("Moving left")
 	elif(Input.is_action_pressed("move_right")):
 		print("Moving right")
+
+
+func _input(event: InputEvent) -> void:
+	aim(event)
+	
 
 func aim(event: InputEvent) -> void:
 	var mouse_motion = event as InputEventMouseMotion
