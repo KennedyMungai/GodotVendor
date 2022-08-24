@@ -25,7 +25,6 @@ mesh = SubResource( 2 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 1.03093, 1.92823 )
-_mouse_sensitivity = 0.25
 
 [node name="cross_hair" type="TextureRect" parent="."]
 anchor_left = 0.5
