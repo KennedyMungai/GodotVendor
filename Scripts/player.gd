@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 		sideways_movement = transform.basis.x
 		
 	movement_vector = (forward_movement + sideways_movement) * speed
-	
+	movement_vector = movement_vector.normalized()
 	move_and_slide(movement_vector)
 
 
