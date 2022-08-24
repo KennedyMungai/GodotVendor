@@ -8,10 +8,11 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	var movement_vector: Vector3
+	var forward_movement: Vector3
 	
 	if(Input.is_action_pressed("move_forward")):
 		print("Moving forward")
-		movement_vector = Vector3(0,0,-1)
+		forward_movement = -transform.basis.z
 	elif(Input.is_action_pressed("move_back")):
 		print("Moving back")
 	elif(Input.is_action_pressed("move_left")):
@@ -19,6 +20,8 @@ func _physics_process(delta: float) -> void:
 	elif(Input.is_action_pressed("move_right")):
 		print("Moving right")
 		
+	movement_vector = forward_movement
+	
 	move_and_slide(movement_vector)
 
 
