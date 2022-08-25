@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Images/Crosshair/crosshair010.png" type="Texture" id=2]
-[ext_resource path="res://fantasy-town-kit-1.1/Models/GLTF format/stallRed.glb" type="PackedScene" id=3]
+[ext_resource path="res://stallRed.tscn" type="PackedScene" id=3]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -46,4 +46,6 @@ margin_bottom = 32.0
 texture = ExtResource( 2 )
 
 [node name="stallRed" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, -2.55553, 0, 0 )
+
+[node name="stallRed2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, -2.2432, 0, -4.03747 )
