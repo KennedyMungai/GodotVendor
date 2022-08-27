@@ -44,5 +44,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.50033, 0.82824, -0.268074 )
 [node name="advancedCharacter" parent="." instance=ExtResource( 6 )]
 transform = Transform( -0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, -0.0707107, -4.9222, 0, 2.08909 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
+[node name="sun" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8.57628, 0 )
