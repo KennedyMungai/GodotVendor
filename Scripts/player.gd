@@ -1,7 +1,7 @@
 extends KinematicBody
 
 export var _mouse_sensitivity: float = 0.25 
-export var speed: float = 10.0
+export var speed: float = 50.0
 
 
 func _ready() -> void:
@@ -24,6 +24,7 @@ func aim(event: InputEvent) -> void:
 		var current_tilt:float=$Camera.rotation_degrees.x
 		current_tilt-= mouse_motion.relative.y * _mouse_sensitivity
 		$Camera.rotation_degrees.x = clamp(current_tilt, -90, 90)
+
 
 # This is code that implements the player movement
 func movement() -> void:
