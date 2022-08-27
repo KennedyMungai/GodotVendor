@@ -59,14 +59,24 @@ margin_right = 32.0
 margin_bottom = 32.0
 texture = ExtResource( 2 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+[node name="Control" type="Control" parent="CanvasLayer"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -40.0
 margin_right = 40.0
 
-[node name="vendor_avatar" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="vendor_avatar" type="TextureRect" parent="CanvasLayer/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -128.0
+margin_right = 128.0
 texture = ExtResource( 8 )
 expand = true
+
+[node name="text_background" type="ColorRect" parent="CanvasLayer/Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 128.0
+margin_top = -88.0
+margin_right = 640.0
+color = Color( 0.152941, 0.0117647, 0.0117647, 1 )
