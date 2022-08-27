@@ -13,7 +13,7 @@ dest_files=[ "res://.import/advancedCharacter.gltf-97910c36e0e89a7590574d2def878
 
 nodes/root_type="Spatial"
 nodes/root_name="Scene Root"
-nodes/root_scale=1.0
+nodes/root_scale=0.1
 nodes/custom_script=""
 nodes/storage=0
 nodes/use_legacy_names=false
