@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://kenney_blockycharacters_updated/Models/Non-rigged/glTF/advancedCharacter.gltf" type="PackedScene" id=1]
+
+[node name="advancedCharacter" instance=ExtResource( 1 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
