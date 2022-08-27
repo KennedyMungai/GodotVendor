@@ -1,7 +1,7 @@
 extends KinematicBody
 
 export var _mouse_sensitivity: float = 0.25 
-export var speed: float = 50.0
+export var speed: float = 5.0
 
 
 func _ready() -> void:
@@ -42,6 +42,6 @@ func movement() -> void:
 	elif(Input.is_action_pressed("move_right")):
 		sideways_movement = transform.basis.x
 		
-	movement_vector = (forward_movement + sideways_movement) * speed
+	movement_vector = (forward_movement + sideways_movement)
 	movement_vector = movement_vector.normalized()
-	move_and_slide(movement_vector)
+	move_and_slide(movement_vector * speed)
