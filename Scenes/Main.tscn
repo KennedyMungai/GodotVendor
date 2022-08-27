@@ -42,3 +42,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71084, 0.822375, 0.201144 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.50033, 0.82824, -0.268074 )
 
 [node name="advancedCharacter" parent="." instance=ExtResource( 6 )]
+transform = Transform( -0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, -0.0707107, -4.9222, 0, 2.08909 )
