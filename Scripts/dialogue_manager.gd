@@ -38,3 +38,4 @@ func on_dialog_initiated(dialogue: Dialogue) -> void:
 	current_dialogue=dialogue
 	current_slide_index=05
 	show_slide()
+	self.visible=true
