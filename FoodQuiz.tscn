@@ -51,7 +51,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.33
 light_energy = 5.0
 light_indirect_energy = 3.246
 shadow_enabled = true
-spot_attenuation = 0.707107
+spot_attenuation = 0.225312
 spot_angle = 22.09
 
 [node name="Label3D" type="Label3D" parent="food/apple"]
@@ -67,7 +67,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.33
 light_energy = 5.0
 light_indirect_energy = 3.246
 shadow_enabled = true
-spot_attenuation = 0.707107
+spot_attenuation = 0.225312
 spot_angle = 22.09
 __meta__ = {
 "_editor_description_": ""
