@@ -1,9 +1,9 @@
 extends Control
 
 
-export(NodePath) var _dialogue_text
+export(NodePath) var _dialogue_text_path
 
 
 func _ready() -> void:
-	_dialogue_text = _dialogue_text as Label
-	_dialogue_text.text="Testing initial text"
+	var dialogue_text: Label = get_node(_dialogue_text_path)
+	pass
