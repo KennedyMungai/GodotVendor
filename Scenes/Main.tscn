@@ -50,9 +50,9 @@ text = "Sample Text"
 transform = Transform( 0.5, -3.78552e-08, 0.866025, -0.866025, -2.18557e-08, 0.5, 0, -1, -4.37114e-08, 0, 8.57628, 0 )
 shadow_enabled = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="game_ui" type="CanvasLayer" parent="."]
 
-[node name="cross_hair" type="TextureRect" parent="CanvasLayer"]
+[node name="cross_hair" type="TextureRect" parent="game_ui"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -63,13 +63,13 @@ margin_right = 32.0
 margin_bottom = 32.0
 texture = ExtResource( 2 )
 
-[node name="dialogue_ui" type="Control" parent="CanvasLayer"]
+[node name="dialogue_ui" type="Control" parent="game_ui"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -40.0
 margin_right = 40.0
 
-[node name="vendor_avatar" type="TextureRect" parent="CanvasLayer/dialogue_ui"]
+[node name="vendor_avatar" type="TextureRect" parent="game_ui/dialogue_ui"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -128.0
@@ -77,7 +77,7 @@ margin_right = 128.0
 texture = ExtResource( 8 )
 expand = true
 
-[node name="text_background" type="ColorRect" parent="CanvasLayer/dialogue_ui"]
+[node name="text_background" type="ColorRect" parent="game_ui/dialogue_ui"]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 128.0
@@ -85,7 +85,7 @@ margin_top = -88.0
 margin_right = 640.0
 color = Color( 0.0980392, 0.0156863, 0.0156863, 0.392157 )
 
-[node name="vendor_dialogue" type="Label" parent="CanvasLayer/dialogue_ui/text_background"]
+[node name="vendor_dialogue" type="Label" parent="game_ui/dialogue_ui/text_background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = SubResource( 2 )
