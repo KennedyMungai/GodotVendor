@@ -70,6 +70,7 @@ anchor_bottom = 1.0
 margin_top = -40.0
 margin_right = 40.0
 script = ExtResource( 10 )
+_dialogue_text = NodePath("text_background/vendor_dialogue")
 
 [node name="vendor_avatar" type="TextureRect" parent="game_ui/dialogue_ui"]
 anchor_top = 1.0
