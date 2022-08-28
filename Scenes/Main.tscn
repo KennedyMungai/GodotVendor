@@ -88,6 +88,10 @@ color = Color( 0.0980392, 0.0156863, 0.0156863, 0.392157 )
 [node name="vendor_dialogue" type="Label" parent="game_ui/dialogue_ui/text_background"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 15.0
+margin_top = 15.0
+margin_right = -15.0
+margin_bottom = -15.0
 custom_fonts/font = SubResource( 2 )
 text = "Sample dialogue text"
 align = 1
