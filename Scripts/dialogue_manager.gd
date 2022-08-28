@@ -35,6 +35,6 @@ func show_slide() -> void:
 
 
 # The function called when there is dialogue initiated
-func on_dialog_initiated() -> void:
+func on_dialog_initiated(dialogue: Dialogue) -> void:
 	print("Dialogue has been initiated")
 	self.visible=true
