@@ -52,6 +52,11 @@ light_energy = 5.0
 light_indirect_energy = 3.246
 shadow_enabled = true
 
+[node name="Label3D" type="Label3D" parent="food/apple"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119258, 0.2287, 0 )
+billboard = 1
+text = "Apple"
+
 [node name="beet" parent="food" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.361657 )
 
@@ -63,5 +68,10 @@ shadow_enabled = true
 __meta__ = {
 "_editor_description_": ""
 }
+
+[node name="Label3D" type="Label3D" parent="food/beet"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119258, 0.2287, 0 )
+billboard = 1
+text = "Beet"
 
 [connection signal="body_entered" from="dialogue_trigger" to="." method="_on_dialogue_trigger_body_entered"]
