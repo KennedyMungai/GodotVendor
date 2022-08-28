@@ -15,7 +15,6 @@ var current_slide_index:int=0
 func _ready() -> void:
 	avatar.texture=current_dialogue.avatar_texture
 	show_slide()
-	self.visible=false
 	
 	GameEvents.connect("dialog_initiated", self, "on_dialog_initiated")
 
@@ -37,5 +36,5 @@ func show_slide() -> void:
 # The function called when there is dialogue initiated
 func on_dialog_initiated(dialogue: Dialogue) -> void:
 	current_dialogue=dialogue
+	current_slide_index=05
 	show_slide()
-	self.visible=true
