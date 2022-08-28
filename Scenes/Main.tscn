@@ -80,3 +80,7 @@ margin_left = 128.0
 margin_top = -88.0
 margin_right = 640.0
 color = Color( 0.152941, 0.0117647, 0.0117647, 1 )
+
+[node name="vendor_dialogue" type="Label" parent="CanvasLayer/dialogue_ui/text_background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
