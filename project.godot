@@ -24,6 +24,10 @@ config/name="Vendor"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameEvents="*res://Scripts/game_events.gd"
+
 [editor]
 
 version_control_autoload_on_startup=true
