@@ -19,8 +19,11 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 	if(Input.is_action_just_pressed("advance_slide")):
-		current_slide_index+=1
-		show_slide()
+		if(current_slide_index < current_dialogue.dialogue_slides.size() - 1):
+			current_slide_index+=1
+			show_slide()
+		else:
+			visible=false
 		
 
 # A function for showing slide
