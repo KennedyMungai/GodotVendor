@@ -21,12 +21,6 @@ dialogue = ExtResource( 7 )
 [node name="stallRed" parent="." instance=ExtResource( 4 )]
 transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 0, 0, 0 )
 
-[node name="apple" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22082, -0.454783 )
-
-[node name="beet" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0125842, 1.21845, 0.352785 )
-
 [node name="dialogue_trigger" type="Area" parent="."]
 transform = Transform( 0.330204, 0, 0, 0, 0.217627, 0, 0, 0, 1, 1, 0.4627, 0 )
 
@@ -42,5 +36,17 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.9798, 0 )
 pixel_size = 0.1
 billboard = 1
 text = "Sample Text"
+
+[node name="food" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0125842, 1.21845, -0.00887227 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="apple" parent="food" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125842, 0.00237596, -0.445911 )
+
+[node name="beet" parent="food" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.361657 )
 
 [connection signal="body_entered" from="dialogue_trigger" to="." method="_on_dialogue_trigger_body_entered"]
