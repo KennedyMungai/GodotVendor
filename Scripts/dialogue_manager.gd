@@ -23,7 +23,7 @@ func _input(event: InputEvent) -> void:
 			current_slide_index+=1
 			show_slide()
 		else:
-			visible=false
+			self.visible=false
 		
 
 # A function for showing slide
