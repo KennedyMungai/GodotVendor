@@ -25,16 +25,15 @@ mesh = SubResource( 1 )
 [node name="player" parent="." instance=ExtResource( 1 )]
 transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 4.5694, 1.03093, -0.211329 )
 
-[node name="stallRed" parent="." instance=ExtResource( 3 )]
+[node name="FoodQuiz" type="Spatial" parent="."]
+
+[node name="stallRed" parent="FoodQuiz" instance=ExtResource( 3 )]
 transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, -5.55553, 0, 0 )
 
-[node name="stallRed2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, -5.2432, 0, -4.03747 )
-
-[node name="apple" parent="." instance=ExtResource( 4 )]
+[node name="apple" parent="FoodQuiz" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71084, 0.822375, 0.201144 )
 
-[node name="beet" parent="." instance=ExtResource( 5 )]
+[node name="beet" parent="FoodQuiz" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.50033, 0.82824, -0.268074 )
 
 [node name="vendor" parent="." instance=ExtResource( 6 )]
