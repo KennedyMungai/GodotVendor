@@ -19,7 +19,7 @@ transform = Transform( 10, 0, 0, 0, 1, 0, 0, 0, 10, 0, 0, 0 )
 mesh = SubResource( 1 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 4.5694, 1.03093, -0.211329 )
+transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 4.5694, 1.03093, -7.97501 )
 
 [node name="FoodQuiz" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.55553, 0, -8 )
