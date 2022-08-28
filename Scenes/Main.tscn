@@ -1,20 +1,13 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Images/Crosshair/crosshair010.png" type="Texture" id=2]
-[ext_resource path="res://stallRed.tscn" type="PackedScene" id=3]
-[ext_resource path="res://food-kit-1.3/Models/GLTF format/apple.glb" type="PackedScene" id=4]
-[ext_resource path="res://food-kit-1.3/Models/GLTF format/beet.glb" type="PackedScene" id=5]
-[ext_resource path="res://advancedCharacter.tscn" type="PackedScene" id=6]
-[ext_resource path="res://vendor.gd" type="Script" id=7]
+[ext_resource path="res://FoodQuiz.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Dialogues/intro.tres" type="Resource" id=8]
 [ext_resource path="res://fonts/PoetsenOne-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Scripts/dialogue_manager.gd" type="Script" id=10]
-[ext_resource path="res://Scenes/dialogue_trigger.gd" type="Script" id=11]
 
 [sub_resource type="PlaneMesh" id=1]
-
-[sub_resource type="BoxShape" id=3]
 
 [sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 9 )
@@ -28,37 +21,8 @@ mesh = SubResource( 1 )
 [node name="player" parent="." instance=ExtResource( 1 )]
 transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, 4.5694, 1.03093, -0.211329 )
 
-[node name="FoodQuiz" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.55553, 0, 0 )
-__meta__ = {
-"_editor_description_": ""
-}
-
-[node name="stallRed" parent="FoodQuiz" instance=ExtResource( 3 )]
-transform = Transform( 2.25, 0, 0, 0, 2.25, 0, 0, 0, 2.25, 0, 0, 0 )
-
-[node name="apple" parent="FoodQuiz" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.837396, -0.454783 )
-
-[node name="beet" parent="FoodQuiz" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0125842, 0.83502, 0.352785 )
-
-[node name="dialogue_trigger" type="Area" parent="FoodQuiz"]
-transform = Transform( 0.330204, 0, 0, 0, 0.217627, 0, 0, 0, 1, 1, 0.4627, 0 )
-script = ExtResource( 11 )
-
-[node name="CollisionShape" type="CollisionShape" parent="FoodQuiz/dialogue_trigger"]
-shape = SubResource( 3 )
-
-[node name="vendor" parent="FoodQuiz" instance=ExtResource( 6 )]
-transform = Transform( -0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, -0.0707107, 0.63333, 0, 2.08909 )
-script = ExtResource( 7 )
-
-[node name="vendor_label" type="Label3D" parent="FoodQuiz/vendor"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.9798, 0 )
-pixel_size = 0.1
-billboard = 1
-text = "Sample Text"
+[node name="FoodQuiz" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.55553, 0, -8 )
 
 [node name="sun" type="DirectionalLight" parent="."]
 transform = Transform( 0.5, -3.78552e-08, 0.866025, -0.866025, -2.18557e-08, 0.5, 0, -1, -4.37114e-08, 0, 8.57628, 0 )
@@ -115,6 +79,3 @@ Skipped a line"
 align = 1
 valign = 1
 autowrap = true
-
-[connection signal="body_entered" from="FoodQuiz/dialogue_trigger" to="FoodQuiz/dialogue_trigger" method="_on_dialogue_trigger_body_entered"]
-[connection signal="body_exited" from="FoodQuiz/dialogue_trigger" to="FoodQuiz/dialogue_trigger" method="_on_dialogue_trigger_body_exited"]
