@@ -11,4 +11,4 @@ export(Resource) onready var current_dialogue=current_dialogue as Dialogue
 
 func _ready() -> void:
 	dialogue_text.text = current_dialogue.dialogue_slides[0]
-#	avatar.texture=
+	avatar.texture=current_dialogue.avatar_texture
