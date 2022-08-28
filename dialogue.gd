@@ -4,6 +4,8 @@ extends Resource
 class_name Dialogue
 
 
-export var avatar_texture
+# Export variables
+export(Texture) var avatar_texture
+export(Array, String) var dialogue_slides
 
-
+# Normal vars
