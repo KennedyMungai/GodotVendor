@@ -36,6 +36,7 @@ func show_slide() -> void:
 # The function called when there is dialogue initiated
 func on_dialog_initiated(dialogue: Dialogue) -> void:
 	current_dialogue=dialogue
-	current_slide_index=05
+	current_slide_index=0
+	avatar.texture=dialogue.avatar_texture
 	show_slide()
 	self.visible=true
