@@ -50,11 +50,11 @@ script = ExtResource( 11 )
 [node name="CollisionShape" type="CollisionShape" parent="FoodQuiz/dialogue_trigger"]
 shape = SubResource( 3 )
 
-[node name="vendor" parent="." instance=ExtResource( 6 )]
-transform = Transform( -0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, -0.0707107, -4.9222, 0, 2.08909 )
+[node name="vendor" parent="FoodQuiz" instance=ExtResource( 6 )]
+transform = Transform( -0.0707107, 0, 0.0707107, 0, 0.1, 0, -0.0707107, 0, -0.0707107, 0.63333, 0, 2.08909 )
 script = ExtResource( 7 )
 
-[node name="vendor_label" type="Label3D" parent="vendor"]
+[node name="vendor_label" type="Label3D" parent="FoodQuiz/vendor"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16.9798, 0 )
 pixel_size = 0.1
 billboard = 1
