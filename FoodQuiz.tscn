@@ -46,7 +46,22 @@ __meta__ = {
 [node name="apple" parent="food" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125842, 0.00237596, -0.445911 )
 
+[node name="SpotLight" type="SpotLight" parent="food/apple"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.338173, 2.98023e-08 )
+light_energy = 5.0
+light_indirect_energy = 3.246
+shadow_enabled = true
+
 [node name="beet" parent="food" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.361657 )
+
+[node name="SpotLight" type="SpotLight" parent="food/beet"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.338173, 0.0140902 )
+light_energy = 5.0
+light_indirect_energy = 3.246
+shadow_enabled = true
+__meta__ = {
+"_editor_description_": ""
+}
 
 [connection signal="body_entered" from="dialogue_trigger" to="." method="_on_dialogue_trigger_body_entered"]
