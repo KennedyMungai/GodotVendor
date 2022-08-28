@@ -20,6 +20,7 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if(Input.is_action_just_pressed("advance_slide")):
 		current_slide_index+=1
+		show_slide()
 		
 
 # A function for showing slide
