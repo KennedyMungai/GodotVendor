@@ -5,7 +5,8 @@ export var speed: float = 5.0
 
 
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+#	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	pass
 	
 
 func _physics_process(delta: float) -> void:
