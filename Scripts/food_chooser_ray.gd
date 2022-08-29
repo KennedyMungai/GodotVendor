@@ -5,4 +5,6 @@ func _input(event: InputEvent) -> void:
 	var collided_area: Area = get_collider()
 	
 	if(collided_area):
-		print(collided_area.get_parent().name)
+		if((collided_area.get_parent()).is_class("Food")):
+			print("Miracle")
+			collided_area.get_parent().on_mouse_entered()
