@@ -28,4 +28,6 @@ current = true
 [node name="food_chooser_ray" type="RayCast" parent="Camera"]
 enabled = true
 cast_to = Vector3( 0, 0, -10 )
+collide_with_areas = true
+collide_with_bodies = false
 script = ExtResource( 2 )
