@@ -26,4 +26,4 @@ current = true
 
 [node name="RayCast" type="RayCast" parent="Camera"]
 enabled = true
-cast_to = Vector3( 0, 0, -100 )
+cast_to = Vector3( 0, 0, -10 )
