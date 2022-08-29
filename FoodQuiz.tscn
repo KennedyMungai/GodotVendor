@@ -68,10 +68,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119258, 0.2287, 0 )
 billboard = 1
 text = "Apple"
 
-[node name="Area" type="Area" parent="food/apple"]
+[node name="apple_area" type="Area" parent="food/apple"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0808395, 0 )
 
-[node name="CollisionShape" type="CollisionShape" parent="food/apple/Area"]
+[node name="CollisionShape" type="CollisionShape" parent="food/apple/apple_area"]
 shape = SubResource( 4 )
 
 [node name="beet" parent="food" instance=ExtResource( 5 )]
@@ -95,9 +95,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.119258, 0.2287, 0 )
 billboard = 1
 text = "Beet"
 
-[node name="Area" type="Area" parent="food/beet"]
+[node name="beet_area" type="Area" parent="food/beet"]
 
-[node name="CollisionShape" type="CollisionShape" parent="food/beet/Area"]
+[node name="CollisionShape" type="CollisionShape" parent="food/beet/beet_area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0597106, 0 )
 shape = SubResource( 5 )
 
