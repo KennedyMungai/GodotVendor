@@ -102,3 +102,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0597106, 0 )
 shape = SubResource( 5 )
 
 [connection signal="body_entered" from="dialogue_trigger" to="." method="_on_dialogue_trigger_body_entered"]
+[connection signal="mouse_entered" from="food/apple/Area" to="food/apple" method="_on_Area_mouse_entered"]
+[connection signal="mouse_entered" from="food/beet/Area" to="food/beet" method="_on_Area_mouse_entered"]
