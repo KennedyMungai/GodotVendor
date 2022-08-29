@@ -5,4 +5,4 @@ func _input(event: InputEvent) -> void:
 	var collided_area: Area = get_collider()
 	
 	if(collided_area):
-		print(collided_area.name)
+		print(collided_area.get_parent().name)
