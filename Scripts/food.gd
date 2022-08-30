@@ -2,6 +2,8 @@ extends Spatial
 
 class_name Food
 
+var spin_speed:float=180
+
 
 func _ready() -> void:
 	GameEvents.connect("food_moused_over", self, "on_mouse_entered")
@@ -9,7 +11,7 @@ func _ready() -> void:
 	
 	
 func _process(delta: float) -> void:
-	self.rotation_degrees.y+=180*delta
+	self.rotation_degrees.y+=spin_speed*delta
 
 
 # Function gets called when a mouse hovers over it
