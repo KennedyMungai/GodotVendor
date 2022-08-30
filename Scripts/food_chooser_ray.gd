@@ -14,3 +14,4 @@ func _input(event: InputEvent) -> void:
 				GameEvents.emit_signal("food_moused_over", collided_area.get_parent())
 	elif(is_mousing_over):
 		is_mousing_over=false
+		GameEvents.emit_signal("food_moused_out")
