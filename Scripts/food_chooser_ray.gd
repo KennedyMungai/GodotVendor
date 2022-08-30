@@ -8,3 +8,4 @@ func _input(event: InputEvent) -> void:
 		if((collided_area.get_parent()) is Food):
 			print("Miracle")
 			collided_area.get_parent().on_mouse_entered()
+			GameEvents.emit_signal("food_moused_over")
