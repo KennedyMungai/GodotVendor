@@ -5,6 +5,7 @@ class_name Food
 
 func _ready() -> void:
 	GameEvents.connect("food_moused_over", self, "on_mouse_entered")
+	GameEvents.connect("food_moused_out", self, "on_moused_out")
 
 
 # Function gets called when a mouse hovers over it
