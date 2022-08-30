@@ -9,7 +9,7 @@ func _ready() -> void:
 	
 	
 func _process(delta: float) -> void:
-	self.rotation_degrees.y+=3
+	self.rotation_degrees.y+=180*delta
 
 
 # Function gets called when a mouse hovers over it
