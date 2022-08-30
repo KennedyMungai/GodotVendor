@@ -9,4 +9,4 @@ func _ready() -> void:
 
 func on_mouse_entered(food_item: Food) -> void:
 	if(food_item == self):
-		print("Mouse entered")
+		$SpotLight.visible = true
