@@ -8,6 +8,7 @@ func _input(event: InputEvent) -> void:
 	
 	if(collided_area):
 		if((collided_area.get_parent()) is Food):
-			is_mousing_over=true
+			if not is_mousing_over:
+				is_mousing_over=true
 			collided_area.get_parent().on_mouse_entered(collided_area.get_parent())
 			GameEvents.emit_signal("food_moused_over", collided_area.get_parent())
