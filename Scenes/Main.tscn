@@ -56,6 +56,7 @@ script = ExtResource( 10 )
 dialogue_text = NodePath("text_background/vendor_dialogue")
 avatar = NodePath("avatar")
 current_dialogue = ExtResource( 8 )
+runtime_data = ExtResource( 5 )
 
 [node name="avatar" type="TextureRect" parent="game_ui/dialogue_ui"]
 anchor_top = 1.0
