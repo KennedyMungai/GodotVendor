@@ -19,6 +19,7 @@ func _ready() -> void:
 	show_slide()
 	
 	GameEvents.connect("dialog_initiated", self, "on_dialog_initiated")
+	GameEvents.connect("dialog_finished", self, "on_dialog_finished")
 
 
 func _input(event: InputEvent) -> void:
