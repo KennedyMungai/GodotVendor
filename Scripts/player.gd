@@ -11,7 +11,8 @@ func _ready() -> void:
 	
 
 func _physics_process(delta: float) -> void:
-	movement()
+	if(runtime_data.current_gameplay_state == Enums.GameplayState.FREEWALK):
+		movement()
 
 
 func _input(event: InputEvent) -> void:
