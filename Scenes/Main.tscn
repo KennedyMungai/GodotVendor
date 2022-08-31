@@ -79,3 +79,6 @@ Skipped a line"
 align = 1
 valign = 1
 autowrap = true
+
+[node name="FoodQuiz2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00282, 0, 2.66203 )
