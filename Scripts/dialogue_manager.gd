@@ -43,3 +43,7 @@ func on_dialog_initiated(dialogue: Dialogue) -> void:
 	avatar.texture=dialogue.avatar_texture
 	show_slide()
 	self.visible=true
+	
+
+func on_dialog_finished() -> void:
+	runtime_data.current_gameplay_state=Enums.GameplayState.FREEWALK
