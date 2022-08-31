@@ -27,7 +27,7 @@ func _input(event: InputEvent) -> void:
 			current_slide_index+=1
 			show_slide()
 		else:
-			self.visible=false
+			GameEvents.emit_signal("dialog_finished")
 		
 
 # A function for showing slide
