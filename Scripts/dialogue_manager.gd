@@ -4,7 +4,9 @@ extends Control
 # Export variables
 export(NodePath) onready var dialogue_text = get_node(dialogue_text) as Label
 export(NodePath) onready var avatar = get_node(avatar) as TextureRect
+
 export(Resource) onready var current_dialogue=current_dialogue as Dialogue
+export(Resource) var runtime_data=runtime_data as RuntimeData
 
 # Onready variables
 
