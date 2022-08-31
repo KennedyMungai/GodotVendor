@@ -37,6 +37,7 @@ func show_slide() -> void:
 
 # The function called when there is dialogue initiated
 func on_dialog_initiated(dialogue: Dialogue) -> void:
+	runtime_data.current_gameplay_state = Enums.GameplayState.IN_DIALOG
 	current_dialogue=dialogue
 	current_slide_index=0
 	avatar.texture=dialogue.avatar_texture
